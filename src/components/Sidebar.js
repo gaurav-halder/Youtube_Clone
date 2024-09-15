@@ -9,7 +9,7 @@ const Sidebar = () => {
     // console.log("Is Menu Open:", isMenuOpen);
 
     return !isMenuOpen ? null : (
-        <div className='w-64 px-6 shadow-lg'>
+        <div className='sm:w-64 px-6 w-40 shadow-lg absolute bg-white'>
             <ul className='border-b py-3'>
                 <li><Link to="/">Home</Link></li>
                 <li>Shorts</li>

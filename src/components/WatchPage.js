@@ -12,11 +12,13 @@ const WatchPage = () => {
     dispatch(closeMenu());
   }, []);
   return (
-    <div className="mt-5 mx-[60px]">
+    // <div className="sm:mt-5 sm:mx-[60px]">
+    <div className="">
       <iframe
-        width="900"
-        height="500"
-        src={"https://www.youtube.com/embed/"+params.get("v")}
+      className="w-screen sm:h-screen h-56"
+        // width="900"
+        // height="500"
+        src={"https://www.youtube.com/embed/"+params.get("v")+ "?&autoplay=1&mute=1"}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
